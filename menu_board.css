@@ -1,0 +1,130 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+.menu-board-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-board {
+    width: 100vw;
+    height: 56.25vw; /* 100 * 9 / 16 */
+    max-height: 100vh;
+    max-width: 177.78vh; /* 100 * 16 / 9 */
+    display: flex; /* Changed to flex for general, will be overridden by specific board classes */
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 0vh 0vh;
+    box-sizing: border-box;
+}
+
+.menu-board-1-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr; /* Columns 1 & 3 are 2x wider than 2 & 4 */
+    grid-template-rows: auto auto; /* Rows will size based on content */
+    gap: 2vh; /* Gap between grid items */
+    align-items: start; /* Align items to the start of their grid area */
+}
+
+.menu-board-3-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr; /* 5 columns with Pasta (last) being 2x wider */
+    grid-template-rows: auto; /* Single row */
+    gap: 2vh; /* Gap between grid items */
+    align-items: start; /* Align items to the start of their grid area */
+}
+
+.category {
+    flex: 1;
+    text-align: center;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    min-width: 0; /* Allow category to shrink below content size */
+}
+
+.category h1 {
+    font-size: 4.6vh;
+    margin: 0;
+    border-bottom: 2px solid white;
+    padding-bottom: 1vh;
+}
+
+.items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    height: 100%;
+    overflow-y: auto; /* Add scroll for overflow */
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vh 0;
+}
+
+.item-name {
+    font-size: 2.875vh;
+    font-weight: bold;
+    margin-bottom: 0.5vh;
+}
+
+.variants {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.variant-names,
+.variant-prices {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.variant-names span,
+.variant-prices span {
+    flex: 1;
+    text-align: center;
+    font-size: 2.3vh;
+}
+
+.variant-description {
+    font-weight: 300; /* Thinner font weight */
+    font-size: 2.07vh;
+    overflow-wrap: break-word; /* Allow long words to break and wrap */
+}
+
+.item-price {
+    font-size: 2.53vh;
+}
+
+.primos-logo-absolute {
+    position: absolute;
+    bottom: 2vh; /* Y padding */
+    right: 2vh; /* X padding */
+    width: 15vw; /* Adjust size as needed, or use a fixed size if preferred */
+    height: auto;
+    z-index: 10; /* Ensure it's above other content */
+}
+
+.pizza-image {
+    max-width: 100%; /* Ensure it doesn't overflow its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 2vh; /* Add some space above it */
+}

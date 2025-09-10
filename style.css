@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+#menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.category {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.category h2 {
+    margin-top: 0;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-variant {
+    font-style: italic;
+    color: #666;
+}
