@@ -15,23 +15,28 @@
     },
     {
       "item": "Onion Rings",
-      "price": 5.14
+      "price": 5.14,
+      "specialLayout": true
     },
     {
       "item": "French Fries",
-      "price": 3.11
+      "price": 3.11,
+      "specialLayout": true
     },
     {
       "item": "Pizza by the Slice",
-      "price": 4.0
+      "price": 4.0,
+      "specialLayout": true
     },
     {
       "item": "Deep Fried Mushrooms",
-      "price": 5.24
+      "price": 5.24,
+      "specialLayout": true
     },
     {
       "item": "Seasoned Potato Wedges",
-      "price": 4.72
+      "price": 4.72,
+      "specialLayout": true
     },
     {
       "item": "Garlic Sticks",
@@ -49,41 +54,30 @@
     },
     {
       "item": "Deep Fried Cheese Stix",
-      "price": 5.71
-    },
-    {
-      "item": "Pizza Sauce",
-      "price": 0.75
-    },
-    {
-      "item": "Ranch",
-      "price": 1.25
-    },
-    {
-      "item": "Garlic Cheese",
-      "price": 2.0
-    },
-    {
-      "item": "Extra Garlic Stick",
-      "price": 0.75
+      "price": 5.71,
+      "specialLayout": true
     }
   ],
   "Submarines": [
     {
-      "item": "Chicken Parmesan Sub",
-      "price": 13.02
+      "item": "Chicken Parmesan",
+      "price": 13.02,
+      "specialLayout": true
     },
     {
-      "item": "Chicken Tender Sub",
-      "price": 13.02
+      "item": "Chicken Tender",
+      "price": 13.02,
+      "specialLayout": true
     },
     {
       "item": "Italian",
-      "price": 11.93
+      "price": 11.93,
+      "specialLayout": true
     },
     {
       "item": "Turkey",
-      "price": 10.37
+      "price": 10.37,
+      "specialLayout": true
     },
     {
       "item": "Steak & Cheese",
@@ -94,56 +88,59 @@
     },
     {
       "item": "Ham & Cheese",
-      "price": 10.37
+      "price": 10.37,
+      "specialLayout": true
     },
     {
       "item": "Pizza",
-      "price": 13.12
+      "price": 13.12,
+      "specialLayout": true
     },
     {
       "item": "Vegetarian",
-      "price": 10.37
+      "price": 10.37,
+      "specialLayout": true
     },
     {
       "item": "Meatball",
-      "price": 13.85
+      "price": 13.85,
+      "specialLayout": true
     },
     {
       "item": "Deluxe",
-      "price": 13.85
+      "price": 13.85,
+      "specialLayout": true
     }
   ],
   "Sandwiches": [
     {
       "item": "Fish Sandwich",
-      "price": 7.81
+      "price": 7.81,
+      "specialLayout": true
     },
     {
       "item": "Fish Sandwich Deluxe",
-      "price": 10.17
+      "price": 10.17,
+      "specialLayout": true
     },
     {
       "item": "1/2 lb. Charburger",
-      "price": 10.26
+      "price": 10.26,
+      "specialLayout": true
     },
     {
       "item": "Charburger Deluxe",
-      "price": 14.57
+      "price": 14.57,
+      "specialLayout": true
     },
     {
       "item": "Cheese",
-      "price": 0.7
+      "price": 0.7,
+      "specialLayout": true
     }
   ],
   "Pasta": [
-    {
-      "item": "Add Baked Cheese To Any Pasta",
-      "variants": {
-        "Pint": 2.54,
-        "Quart": 3.48,
-        "Bucket": 5.45
-      }
-    },
+
     {
       "item": "Spaghetti/Mostaccioli",
       "variants": {
@@ -154,23 +151,6 @@
         "with Meatballs & Mushrooms (1 Serving)": 10.58,
         "with Meatballs & Mushrooms (1-2 Servings)": 16.19
       }
-    },
-    {
-      "item": "Bucket of Spaghetti or Mostaccioli",
-      "variants": {
-        "(serves 3-5)": 29.52
-      }
-    },
-    {
-      "item": "Add Meatballs",
-      "variants": {
-        "Quantity 4": 5.71,
-        "-4": 5.71
-      }
-    },
-    {
-      "item": "Add Mushrooms",
-      "price": 3.14
     },
     {
       "item": "Ravioli (Meat or Cheese)",
@@ -186,14 +166,17 @@
       }
     },
     {
-      "item": "Bucket of Ravioli",
-      "variants": {
-        "(Serves 3-5)": 35.2
-      }
-    },
-    {
       "item": "Lasagna",
-      "price": 15.47
+      "price": 15.47,
+      "specialLayout": true
+    },
+        {
+      "item": "Add Baked Cheese To Any Pasta",
+      "variants": {
+        "Pint": 2.54,
+        "Quart": 3.48,
+        "Bucket": 5.45
+      }
     }
   ],
   "Specialty Pizzas": [
@@ -299,33 +282,40 @@
     },
     {
       "item": "Primo's Special",
-      "price": 53.76
+      "price": 53.76,
+      "specialLayout": true
     },
     {
       "item": "Primo's Supreme",
-      "price": 58.35
+      "price": 58.35,
+      "specialLayout": true
     },
     {
       "item": "Extra Items",
-      "price": 4.98
+      "price": 4.98,
+      "specialLayout": true
     }
   ],
   "Stuffed Pizza": [
     {
       "item": "Cheese",
-      "price": 8.83
+      "price": 8.83,
+      "specialLayout": true
     },
     {
       "item": "Primo's Special",
-      "price": 13.12
+      "price": 13.12,
+      "specialLayout": true
     },
     {
       "item": "Primo's Supreme",
-      "price": 14.21
+      "price": 14.21,
+      "specialLayout": true
     },
     {
       "item": "Extra Items",
-      "price": 0.59
+      "price": 0.59,
+      "specialLayout": true
     }
   ],
   "Salads": [
@@ -411,85 +401,104 @@
     },
     {
       "item": "8 Pieces",
-      "price": 21.23
+      "price": 21.23,
+      "specialLayout": true
     },
     {
       "item": "16 Pieces",
-      "price": 31.76
+      "price": 31.76,
+      "specialLayout": true
     },
     {
       "item": "20 Pieces",
-      "price": 35.9
+      "price": 35.9,
+      "specialLayout": true
     },
     {
       "item": "24 Pieces",
-      "price": 40.01
+      "price": 40.01,
+      "specialLayout": true
     }
   ],
   "Chicken Tenders": [
     {
       "item": "6 Pieces",
-      "price": 11.84
+      "price": 11.84,
+      "specialLayout": true
     },
     {
       "item": "12 Pieces",
-      "price": 19.06
+      "price": 19.06,
+      "specialLayout": true
     },
     {
       "item": "18 Pieces",
-      "price": 25.0
+      "price": 25.0,
+      "specialLayout": true
     },
     {
       "item": "24 Pieces",
-      "price": 30.14
+      "price": 30.14,
+      "specialLayout": true
     }
   ],
   "Wing Dings": [
     {
       "item": "6 Wing Dings",
-      "price": 7.73
+      "price": 7.73,
+      "specialLayout": true
     },
     {
       "item": "12 Wing Dings",
-      "price": 14.27
+      "price": 14.27,
+      "specialLayout": true
     },
     {
       "item": "24 Wing Dings",
-      "price": 24.9
+      "price": 24.9,
+      "specialLayout": true
     },
     {
       "item": "36 Wing Dings",
-      "price": 37.26
+      "price": 37.26,
+      "specialLayout": true
     }
   ],
   "Combination Plates": [
     {
       "item": "Ribs & Chicken",
-      "price": 18.44
+      "price": 18.44,
+      "specialLayout": true
     },
     {
       "item": "Ribs & Shrimp",
-      "price": 18.44
+      "price": 18.44,
+      "specialLayout": true
     },
     {
       "item": "Chicken & Shrimp",
-      "price": 15.81
+      "price": 15.81,
+      "specialLayout": true
     },
     {
       "item": "Ribs & Fish",
-      "price": 18.44
+      "price": 18.44,
+      "specialLayout": true
     },
     {
       "item": "Chicken & Fish",
-      "price": 15.81
+      "price": 15.81,
+      "specialLayout": true
     },
     {
       "item": "Shrimp & Frog Legs",
-      "price": 19.28
+      "price": 19.28,
+      "specialLayout": true
     },
     {
       "item": "Primo Smorg",
-      "price": 26.02
+      "price": 26.02,
+      "specialLayout": true
     }
   ],
   "Seafood": [
@@ -501,7 +510,8 @@
     },
     {
       "item": "21 Shrimp in the Basket",
-      "price": 13.33
+      "price": 13.33,
+      "specialLayout": true
     },
     {
       "item": "Shrimp Dinner",
@@ -523,11 +533,13 @@
     },
     {
       "item": "Jumbo Frog Legs",
-      "price": 19.75
+      "price": 19.75,
+      "specialLayout": true
     },
     {
       "item": "Cod 10 Piece Basket",
-      "price": 32.22
+      "price": 32.22,
+      "specialLayout": true
     }
   ],
   "Hand Battered Shrimp": [
@@ -556,13 +568,13 @@
     },
     {
       "item": "Cookies",
-      "variants": {
-        "(Oatmeal, Chocolate Chip & White Chocolate Macadamia Nut)": 2.0
-      }
+      "price": 2.00,
+      "specialLayout": true
     },
     {
       "item": "Oreo Pie",
-      "price": 6.25
+      "price": 6.25,
+      "specialLayout": true
     }
   ],
   "U Bake Pizza": [
@@ -592,6 +604,44 @@
       "variants": {
         "Small": 1.1,
         "Large": 1.65
+      }
+    }
+  ],
+  "Extras": [
+    {
+      "item": "Pizza Sauce",
+      "price": 0.75,
+      "specialLayout": true
+    },
+    {
+      "item": "Ranch",
+      "price": 1.25,
+      "specialLayout": true
+    },
+    {
+      "item": "Garlic Cheese",
+      "price": 2.0,
+      "specialLayout": true
+    },
+    {
+      "item": "Garlic Stick",
+      "price": 0.75,
+      "specialLayout": true
+    }
+  ],
+  "Buckets": [
+    {
+      "item": "Spag or Mostaccioli",
+      "variants": {
+        "(serves 3-5)": 29.52,
+        "Add Meatballs (4)": 5.71,
+        "Add Mushrooms": 3.14
+      }
+    },
+    {
+      "item": "Ravioli",
+      "variants": {
+        "(Serves 3-5)": 35.2
       }
     }
   ]

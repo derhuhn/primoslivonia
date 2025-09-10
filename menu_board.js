@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const screen1Categories = ["Round Pizza", "Square Pizza", "Specialty Pizzas", "Tray Pizza", "Stuffed Pizza", "U Bake Pizza"];
             const screen2Categories = ["BBQ Ribs", "Broasted Chicken", "Chicken Tenders", "Wing Dings", "Combination Plates", "Seafood", "Hand Battered Shrimp"];
-            const screen3Categories = ["Side Orders", "Submarines", "Sandwiches", "Pasta", "Salads", "Desserts"];
+            const screen3Categories = ["Side Orders", "Submarines", "Sandwiches", "Pasta", "Salads", "Desserts", "Extras", "Buckets"];
 
             if (menuBoard1) {
                 menuBoard1.classList.add("menu-board-1-layout");
@@ -205,6 +205,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const submarinesItems = createItems(data["Submarines"], "Submarines");
         column2.appendChild(submarinesItems);
 
+        const extrasTitle = document.createElement("h1");
+        extrasTitle.textContent = "Extras";
+        extrasTitle.style.marginTop = "2vh";
+        column2.appendChild(extrasTitle);
+        const extrasItems = createItems(data["Extras"], "Extras");
+        column2.appendChild(extrasItems);
+
         container.appendChild(column2);
 
         const column3 = document.createElement("div");
@@ -234,63 +241,130 @@ document.addEventListener("DOMContentLoaded", () => {
         const dessertsItems = createItems(data["Desserts"], "Desserts");
         column4.appendChild(dessertsItems);
 
+        const bucketsTitle = document.createElement("h1");
+        bucketsTitle.textContent = "Buckets";
+        bucketsTitle.style.marginTop = "2vh";
+        column4.appendChild(bucketsTitle);
+        const bucketsItems = createItems(data["Buckets"], "Buckets");
+        column4.appendChild(bucketsItems);
+
         container.appendChild(column4);
 
-        const otherCategories = categories.filter(c => c !== "Side Orders" && c !== "Submarines" && c !== "Salads" && c !== "Sandwiches" && c !== "Desserts");
+        const otherCategories = categories.filter(c => c !== "Side Orders" && c !== "Submarines" && c !== "Salads" && c !== "Sandwiches" && c !== "Desserts" && c !== "Extras" && c !== "Buckets");
         renderMenu(data, otherCategories, container);
     }
 
     function createItems(items, categoryName) {
         const itemsEl = document.createElement("div");
         itemsEl.classList.add("items");
+        const isMenu3 = !!document.getElementById("menu-board-3");
+
         items.forEach(item => {
             const itemEl = document.createElement("div");
-            itemEl.classList.add("item");
 
-            const itemName = document.createElement("div");
-            itemName.classList.add("item-name");
-            itemName.textContent = item.item;
-            itemEl.appendChild(itemName);
+            if (isMenu3 && item.price && !item.variants) {
+                itemEl.classList.add("special-item-row");
 
-            if (item.variants) {
-                const variantsEl = document.createElement("div");
-                variantsEl.classList.add("variants");
+                const itemName = document.createElement("div");
+                itemName.classList.add("special-item-name");
+                itemName.textContent = item.item;
+                itemEl.appendChild(itemName);
 
-                const variantNamesEl = document.createElement("div");
-                variantNamesEl.classList.add("variant-names");
-                Object.keys(item.variants).forEach(variantName => {
-                    const variantNameEl = document.createElement("span");
-                    if ((categoryName === "Round Pizza" || categoryName === "Square Pizza" || categoryName === "U Bake Pizza" || categoryName === "Specialty Pizzas") && variantName.includes(" ")) {
-                        const parts = variantName.split(/ (.*)/s);
-                        const sizeEl = document.createElement("div");
-                        sizeEl.textContent = parts[0];
-                        const descEl = document.createElement("div");
-                        descEl.classList.add("variant-description");
-                        descEl.textContent = parts[1];
-                        variantNameEl.appendChild(sizeEl);
-                        variantNameEl.appendChild(descEl);
-                    } else {
-                        variantNameEl.textContent = variantName;
-                    }
-                    variantNamesEl.appendChild(variantNameEl);
-                });
-                variantsEl.appendChild(variantNamesEl);
-
-                const variantPricesEl = document.createElement("div");
-                variantPricesEl.classList.add("variant-prices");
-                Object.values(item.variants).forEach(variantPrice => {
-                    const variantPriceEl = document.createElement("span");
-                    variantPriceEl.textContent = `$${variantPrice.toFixed(2)}`;
-                    variantPricesEl.appendChild(variantPriceEl);
-                });
-                variantsEl.appendChild(variantPricesEl);
-
-                itemEl.appendChild(variantsEl);
-            } else if (item.price) {
                 const itemPrice = document.createElement("div");
-                itemPrice.classList.add("item-price");
+                itemPrice.classList.add("special-item-price");
                 itemPrice.textContent = `$${item.price.toFixed(2)}`;
                 itemEl.appendChild(itemPrice);
+            } else if (isMenu3 && item.variants) {
+                itemEl.classList.add("item");
+
+                if (item.price) {
+                    const baseItemRow = document.createElement('div');
+                    baseItemRow.classList.add('special-item-row');
+
+                    const itemName = document.createElement("div");
+                    itemName.classList.add("special-item-name");
+                    itemName.textContent = item.item;
+                    baseItemRow.appendChild(itemName);
+
+                    const itemPrice = document.createElement("div");
+                    itemPrice.classList.add("special-item-price");
+                    itemPrice.textContent = `$${item.price.toFixed(2)}`;
+                    baseItemRow.appendChild(itemPrice);
+
+                    itemEl.appendChild(baseItemRow);
+                } else {
+                    const itemName = document.createElement("div");
+                    itemName.classList.add("item-name");
+                    itemName.textContent = item.item;
+                    itemEl.appendChild(itemName);
+                }
+
+                const variantsContainer = document.createElement("div");
+                Object.entries(item.variants).forEach(([variantName, variantPrice]) => {
+                    const variantRow = document.createElement('div');
+                    variantRow.classList.add('variant-row-menu3');
+
+                    const variantText = document.createElement('div');
+                    variantText.classList.add('variant-text-menu3');
+                    variantText.textContent = variantName;
+                    variantRow.appendChild(variantText);
+
+                    const variantPriceEl = document.createElement('div');
+                    variantPriceEl.classList.add('variant-price-menu3');
+                    variantPriceEl.textContent = `$${variantPrice.toFixed(2)}`;
+                    variantRow.appendChild(variantPriceEl);
+
+                    variantsContainer.appendChild(variantRow);
+                });
+                itemEl.appendChild(variantsContainer);
+            } else {
+                itemEl.classList.add("item");
+
+                const itemName = document.createElement("div");
+                itemName.classList.add("item-name");
+                itemName.textContent = item.item;
+                itemEl.appendChild(itemName);
+
+                if (item.price) {
+                    const itemPrice = document.createElement("div");
+                    itemPrice.classList.add("item-price");
+                    itemPrice.textContent = `$${item.price.toFixed(2)}`;
+                    itemEl.appendChild(itemPrice);
+                } else if (item.variants) {
+                    const variantsEl = document.createElement("div");
+                    variantsEl.classList.add("variants");
+
+                    const variantNamesEl = document.createElement("div");
+                    variantNamesEl.classList.add("variant-names");
+                    Object.keys(item.variants).forEach(variantName => {
+                        const variantNameEl = document.createElement("span");
+                        if ((categoryName === "Round Pizza" || categoryName === "Square Pizza" || categoryName === "U Bake Pizza" || categoryName === "Specialty Pizzas") && variantName.includes(" ")) {
+                            const parts = variantName.split(/ (.*)/s);
+                            const sizeEl = document.createElement("div");
+                            sizeEl.textContent = parts[0];
+                            const descEl = document.createElement("div");
+                            descEl.classList.add("variant-description");
+                            descEl.textContent = parts[1];
+                            variantNameEl.appendChild(sizeEl);
+                            variantNameEl.appendChild(descEl);
+                        } else {
+                            variantNameEl.textContent = variantName;
+                        }
+                        variantNamesEl.appendChild(variantNameEl);
+                    });
+                    variantsEl.appendChild(variantNamesEl);
+
+                    const variantPricesEl = document.createElement("div");
+                    variantPricesEl.classList.add("variant-prices");
+                    Object.values(item.variants).forEach(variantPrice => {
+                        const variantPriceEl = document.createElement("span");
+                        variantPriceEl.textContent = `$${variantPrice.toFixed(2)}`;
+                        variantPricesEl.appendChild(variantPriceEl);
+                    });
+                    variantsEl.appendChild(variantPricesEl);
+
+                    itemEl.appendChild(variantsEl);
+                }
             }
 
             itemsEl.appendChild(itemEl);

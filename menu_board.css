@@ -78,6 +78,16 @@ body {
     padding: 1vh 0;
 }
 
+.menu-board-3-layout .item {
+    padding: 0.5vh 0;
+}
+
+.menu-board-3-layout .column-1-menu3 .item,
+.menu-board-3-layout .column-2-menu3 .item,
+.menu-board-3-layout .column-4-menu3 .item {
+    padding: 0.2vh 0;
+}
+
 .item-name {
     font-size: 2.875vh;
     font-weight: bold;
@@ -127,4 +137,61 @@ body {
     max-width: 100%; /* Ensure it doesn't overflow its container */
     height: auto; /* Maintain aspect ratio */
     margin-top: 2vh; /* Add some space above it */
+}
+
+.special-item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    padding: 0.5vh 0;
+}
+
+.special-item-name {
+    font-size: 2.875vh;
+    font-weight: bold;
+    text-align: left;
+    flex-grow: 1; /* Allows the name to take up available space */
+}
+
+.special-item-price {
+    font-size: 2.53vh;
+    text-align: right;
+    white-space: nowrap; /* Prevents price from wrapping */
+    margin-left: 1vh;
+}
+
+/* New styles for variants in menu_board_3 */
+.variant-row-menu3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    padding: 0.5vh 0;
+}
+
+.variant-text-menu3 {
+    font-size: 2.53vh; /* Matching special-item-price font size */
+    text-align: left;
+    flex-grow: 1;
+}
+
+.variant-price-menu3 {
+    font-size: 2.53vh; /* Already set, but good to confirm */
+    text-align: right;
+    white-space: nowrap;
+    margin-left: 1vh;
+}
+
+/* Font size adjustments for menu_board_3 to fit content */
+.menu-board-3-layout .item-name,
+.menu-board-3-layout .special-item-name {
+    font-size: 2.6vh;
+}
+
+.menu-board-3-layout .item-price,
+.menu-board-3-layout .special-item-price,
+.menu-board-3-layout .variant-text-menu3,
+.menu-board-3-layout .variant-price-menu3 {
+    font-size: 2.4vh;
 }
