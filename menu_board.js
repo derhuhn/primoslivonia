@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function renderMenu3(data, categories, container) {
         const column1 = document.createElement("div");
-        column1.classList.add("category");
+        column1.classList.add("category", "stretch-column-content");
 
         const sideOrdersTitle = document.createElement("h1");
         sideOrdersTitle.textContent = "Side Orders";
@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", () => {
         container.appendChild(column2);
 
         const column3 = document.createElement("div");
-        column3.classList.add("category");
+        column3.classList.add("category", "stretch-column-content");
 
         const saladsTitle = document.createElement("h1");
         saladsTitle.textContent = "Salads";

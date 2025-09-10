@@ -183,6 +183,15 @@ body {
     margin-left: 1vh;
 }
 
+/* Styles for stretching specific columns on menu board 3 */
+.menu-board-3-layout .stretch-column-content {
+    align-self: stretch;
+}
+
+.menu-board-3-layout .stretch-column-content .items {
+    justify-content: space-between;
+}
+
 /* Font size adjustments for menu_board_3 to fit content */
 .menu-board-3-layout .item-name,
 .menu-board-3-layout .special-item-name {
