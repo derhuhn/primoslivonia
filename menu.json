@@ -1,12 +1,6 @@
 {
   "Side Orders": [
-    {
-      "item": "Cheese Bread",
-      "variants": {
-        "10\"": 10.95,
-        "14\"": 12.95
-      }
-    },
+ 
     {
       "item": "Cole Slaw",
       "variants": {
@@ -52,11 +46,14 @@
         "1 Dozen": 10.55
       }
     },
-    {
-      "item": "Deep Fried Cheese Stix",
-      "price": 5.7,
-      "specialLayout": true
+       {
+      "item": "NEW Cheese Bread",
+      "variants": {
+        "10\"": 10.95,
+        "14\"": 12.95
+      }
     }
+
   ],
   "Submarines": [
     {
@@ -524,12 +521,7 @@
         "(2 pcs.)": 11.65
       }
     },
-    {
-      "item": "Fish & Chips",
-      "variants": {
-        "(4 pcs.)": 15.8
-      }
-    },
+ 
     {
       "item": "Jumbo Frog Legs",
       "price": 19.75,
@@ -539,6 +531,18 @@
       "item": "Cod 10 Piece Basket",
       "price": 32.2,
       "specialLayout": true
+    },
+    {
+      "item": "Bucket of Jumbo Shrimp",
+      "variants": {
+        "(16 pcs.)": 30.25
+      }
+    },
+       {
+      "item": "Fish & Chips",
+      "variants": {
+        "(4 pcs.)": 15.8
+      }
     }
   ],
   "Hand Battered Shrimp": [
@@ -549,12 +553,6 @@
         "1/2 lb.": 19.7,
         "3/4 lb.": 25.35,
         "1 lb.": 34.2
-      }
-    },
-    {
-      "item": "Bucket of Jumbo Shrimp",
-      "variants": {
-        "(16 pcs.)": 30.25
       }
     }
   ],
@@ -626,6 +624,11 @@
       "item": "Garlic Stick",
       "price": 0.75,
       "specialLayout": true
+    },
+    {
+      "item": "Deep Fried Cheese Stix",
+      "price": 5.7,
+      "specialLayout": true
     }
   ],
   "Buckets": [
@@ -643,5 +646,6 @@
         "(Serves 3-5)": 35.2
       }
     }
+    
   ]
 }

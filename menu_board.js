@@ -262,7 +262,44 @@ document.addEventListener("DOMContentLoaded", () => {
         items.forEach(item => {
             const itemEl = document.createElement("div");
 
-            if (isMenu3 && item.price && !item.variants) {
+            if (item.item === "Fish & Chips") {
+                // Special handling for our featured item
+                itemEl.classList.add("fish-and-chips-special");
+
+                const itemName = document.createElement("div");
+                itemName.classList.add("fish-and-chips-name");
+                itemName.textContent = item.item;
+                itemEl.appendChild(itemName);
+
+                const itemVariant = document.createElement("div");
+                itemVariant.classList.add("fish-and-chips-variant");
+                const variantName = Object.keys(item.variants)[0];
+                itemVariant.textContent = variantName;
+                itemEl.appendChild(itemVariant);
+
+                const itemPrice = document.createElement("div");
+                itemPrice.classList.add("fish-and-chips-price");
+                const variantPrice = Object.values(item.variants)[0];
+                itemPrice.textContent = `$${variantPrice.toFixed(2)}`;
+                itemEl.appendChild(itemPrice);
+
+            } else if (item.item === "Add Baked Cheese To Any Pasta") {
+                itemEl.classList.add("item");
+                const itemName = document.createElement("div");
+                itemName.classList.add("item-name");
+                itemName.textContent = item.item;
+                itemEl.appendChild(itemName);
+
+                const variantsRow = document.createElement('div');
+                variantsRow.classList.add('variants-on-one-row');
+
+                const variantsContent = Object.entries(item.variants).map(([variantName, variantPrice]) => {
+                    return `${variantName}: $${variantPrice.toFixed(2)}`;
+                }).join('&nbsp;&nbsp;&nbsp;');
+
+                variantsRow.innerHTML = variantsContent;
+                itemEl.appendChild(variantsRow);
+            } else if (isMenu3 && item.price && !item.variants) {
                 itemEl.classList.add("special-item-row");
 
                 const itemName = document.createElement("div");
@@ -274,7 +311,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 itemPrice.classList.add("special-item-price");
                 itemPrice.textContent = `$${item.price.toFixed(2)}`;
                 itemEl.appendChild(itemPrice);
-            } else if (isMenu3 && item.variants) {
+            } else if ((isMenu3 && item.variants) || (categoryName === "Hand Battered Shrimp" && item.variants)) {
                 itemEl.classList.add("item");
 
                 if (item.price) {

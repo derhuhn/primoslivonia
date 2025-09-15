@@ -74,8 +74,8 @@ body {
 .item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 1vh 0;
+    align-items: stretch; /* Allow children to fill the width */
+    padding: 0.8vh 0;
 }
 
 .menu-board-3-layout .item {
@@ -111,7 +111,7 @@ body {
 .variant-prices span {
     flex: 1;
     text-align: center;
-    font-size: 2.3vh;
+    font-size: 2.7vh;
 }
 
 .variant-description {
@@ -121,7 +121,7 @@ body {
 }
 
 .item-price {
-    font-size: 2.53vh;
+    font-size: 3vh;
 }
 
 .primos-logo-absolute {
@@ -131,6 +131,33 @@ body {
     width: 15vw; /* Adjust size as needed, or use a fixed size if preferred */
     height: auto;
     z-index: 10; /* Ensure it's above other content */
+}
+
+.cheese-bread-absolute {
+    position: absolute;
+    bottom: 0vh; /* Y padding */
+    left: 5vh; /* X padding */
+    width: 10vw; /* Adjust size as needed */
+    height: auto;
+    z-index: 10; /* Ensure it's above other content */
+}
+
+.fish-absolute {
+    position: absolute;
+    bottom: 1vh; /* Y padding */
+    right: 21vw; /* X position from left */
+    width: 18vw; /* Adjust size as needed */
+    height: auto;
+    z-index: 10;
+}
+
+.chicken-absolute {
+    position: absolute;
+    bottom: -1.5vh; /* Y padding */
+    left: 42vw; /* X position from right */
+    width: 18vw; /* Adjust size as needed */
+    height: auto;
+    z-index: 10;
 }
 
 .pizza-image {
@@ -144,7 +171,7 @@ body {
     justify-content: space-between;
     align-items: baseline;
     width: 100%;
-    padding: 0.5vh 0;
+    padding: 0.4vh 0;
 }
 
 .special-item-name {
@@ -155,7 +182,7 @@ body {
 }
 
 .special-item-price {
-    font-size: 2.53vh;
+    font-size: 3vh;
     text-align: right;
     white-space: nowrap; /* Prevents price from wrapping */
     margin-left: 1vh;
@@ -165,22 +192,20 @@ body {
 .variant-row-menu3 {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
     width: 100%;
-    padding: 0.5vh 0;
+    padding: 0.4vh 0;
+    align-items: baseline;
 }
 
 .variant-text-menu3 {
     font-size: 2.53vh; /* Matching special-item-price font size */
     text-align: left;
-    flex-grow: 1;
 }
 
 .variant-price-menu3 {
-    font-size: 2.53vh; /* Already set, but good to confirm */
+    font-size: 3vh;
     text-align: right;
     white-space: nowrap;
-    margin-left: 1vh;
 }
 
 /* Styles for stretching specific columns on menu board 3 */
@@ -188,9 +213,7 @@ body {
     align-self: stretch;
 }
 
-.menu-board-3-layout .stretch-column-content .items {
-    justify-content: space-between;
-}
+
 
 /* Font size adjustments for menu_board_3 to fit content */
 .menu-board-3-layout .item-name,
@@ -203,18 +226,77 @@ body {
 .menu-board-3-layout .special-item-price,
 .menu-board-3-layout .variant-text-menu3,
 .menu-board-3-layout .variant-price-menu3 {
-    font-size: 2.4vh;
+    font-size: 2.8vh;
 }
 
 /* Adjustments for menu_board_2 layout */
 .menu-board-2-layout > .category:nth-child(2) {
     display: grid;
     grid-template-rows: auto 2fr auto 1fr;
-    padding: 1vh; /* Re-apply padding since we are overriding .category */
+    padding: 2vh; /* Re-apply padding since we are overriding .category */
 }
 
 .menu-board-2-layout > .category:nth-child(2) > .items {
     flex: none; /* Disable flex behavior */
     height: auto; /* Let the grid handle the height */
     overflow-y: hidden; /* We don't want scrollbars if the grid works */
+}
+
+/* Reduce padding for Side Orders and Salads on menu_board_3 */
+.menu-board-3-layout > .category:nth-child(1) .item,
+.menu-board-3-layout > .category:nth-child(3) .item {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.variants-on-one-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 2.4vh; /* Match other prices on menu 3 */
+    padding: 0.4vh 0;
+}
+
+/* Reduce vertical padding for items in column 4 of menu_board_3 */
+.menu-board-3-layout > .category:nth-child(4) .item,
+.menu-board-3-layout > .category:nth-child(4) .special-item-row,
+.menu-board-3-layout > .category:nth-child(4) .variant-row-menu3 {
+    padding-top: 0.2vh;
+    padding-bottom: 0.2vh;
+}
+
+/* Special style for the Fish & Chips item on menu_board_2 */
+.fish-and-chips-special {
+    background-color: lightgray;
+    border-radius: 8px;
+    padding: 1vh;
+    margin-top: auto; /* Pushes the item to the bottom of its flex container */
+    margin-bottom: 2vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles for the 3-line Fish & Chips layout */
+.fish-and-chips-name,
+.fish-and-chips-variant,
+.fish-and-chips-price {
+    color: black;
+    text-align: center;
+}
+
+.fish-and-chips-name {
+    font-size: 3.2vh;
+    font-weight: bold;
+}
+
+.fish-and-chips-variant {
+    font-size: 2.5vh;
+}
+
+.fish-and-chips-price {
+    font-size: 3.2vh;
+    font-weight: bold;
 }
