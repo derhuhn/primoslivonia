@@ -1,0 +1,167 @@
+Category,Item,Variant,Price
+Side Orders,Cheese Bread,"10""",10.95
+Side Orders,Cheese Bread,"14""",12.95
+Submarines,Chicken Parmesan Sub,,13.00
+Submarines,Chicken Tender Sub,,13.00
+Submarines,Italian,,11.95
+Submarines,Turkey,,10.35
+Submarines,Steak & Cheese,,15.00
+Submarines,Steak & Cheese,with Mushrooms,15.95
+Submarines,Ham & Cheese,,10.35
+Submarines,Pizza,,13.10
+Submarines,Vegetarian,,10.35
+Submarines,Meatball,,13.85
+Submarines,Deluxe,,13.85
+Sandwiches,Fish Sandwich,,7.80
+Sandwiches,Fish Sandwich Deluxe,,10.15
+Sandwiches,1/2 lb. Charburger,,10.25
+Sandwiches,Charburger Deluxe,,14.55
+Sandwiches,Cheese,,0.70
+Pasta,Add Baked Cheese To Any Pasta,Pint,2.55
+Pasta,Add Baked Cheese To Any Pasta,Quart,3.50
+Pasta,Add Baked Cheese To Any Pasta,Bucket,5.45
+Pasta,Spaghetti/Mostaccioli,with Mushrooms (1 Serving),8.70
+Pasta,Spaghetti/Mostaccioli,with Mushrooms (1-2 Servings),14.15
+Pasta,Spaghetti/Mostaccioli,with Meatballs (1 Serving),9.35
+Pasta,Spaghetti/Mostaccioli,with Meatballs (1-2 Servings),14.95
+Pasta,Spaghetti/Mostaccioli,with Meatballs & Mushrooms (1 Serving),10.60
+Pasta,Spaghetti/Mostaccioli,with Meatballs & Mushrooms (1-2 Servings),16.20
+Pasta,Bucket of Spaghetti or Mostaccioli,(serves 3-5),29.50
+Pasta,Add Meatballs,Quantity 4,5.70
+Pasta,Add Mushrooms,,3.15
+Pasta,Ravioli (Meat or Cheese),(1 Serving),10.40
+Pasta,Ravioli (Meat or Cheese),(1-2 Servings),15.70
+Pasta,Ravioli (Meat or Cheese),with Mushrooms (1 Serving),11.10
+Pasta,Ravioli (Meat or Cheese),with Mushrooms (1-2 Servings),16.80
+Pasta,Ravioli (Meat or Cheese),with Meatballs (1 Serving),11.50
+Pasta,Ravioli (Meat or Cheese),with Meatballs (1-2 Servings),17.85
+Pasta,Ravioli (Meat or Cheese),with Meatballs & Mushrooms (1 Serving),12.40
+Pasta,Ravioli (Meat or Cheese),with Meatballs & Mushrooms (1-2 Servings),19.20
+Pasta,Bucket of Ravioli,(Serves 3-5),35.20
+Pasta,Add Meatballs,-4,5.70
+Pasta,Add Mushrooms,,3.15
+Pasta,Lasagna,,15.45
+Specialty Pizzas,BBQ Chicken,Small,16.00
+Specialty Pizzas,BBQ Chicken,Medium,19.65
+Specialty Pizzas,BBQ Chicken,Large,23.70
+Specialty Pizzas,BBQ Chicken,XLarge (Round Only),28.65
+Specialty Pizzas,Hawaiian,Small,14.60
+Specialty Pizzas,Hawaiian,Medium,17.90
+Specialty Pizzas,Hawaiian,Large,21.70
+Specialty Pizzas,Hawaiian,XLarge (Round Only),26.30
+Specialty Pizzas,BLT,Small,16.00
+Specialty Pizzas,BLT,Medium,19.65
+Specialty Pizzas,BLT,Large,23.70
+Specialty Pizzas,BLT,XLarge (Round Only),28.65
+Specialty Pizzas,Primo's Special,Small,18.70
+Specialty Pizzas,Primo's Special,Medium,23.35
+Specialty Pizzas,Primo's Special,Large,27.55
+Specialty Pizzas,Primo's Special,XLarge (Round Only),33.30
+Specialty Pizzas,Primo's Supreme,Small,20.10
+Specialty Pizzas,Primo's Supreme,Medium,25.15
+Specialty Pizzas,Primo's Supreme,Large,29.50
+Specialty Pizzas,Primo's Supreme,XLarge (Round Only),35.65
+Specialty Pizzas,Green Pizza,Small,13.20
+Specialty Pizzas,Green Pizza,Medium,16.15
+Specialty Pizzas,Green Pizza,Large,19.65
+Specialty Pizzas,Green Pizza,XLarge (Round Only),23.95
+Round Pizza,Cheese,"Small 12""/8pc",11.80
+Round Pizza,Cheese,"Medium 14""/10pc",14.40
+Round Pizza,Cheese,"Large 16""/12pc",17.65
+Round Pizza,Cheese,"XLarge 18""/14pc",21.65
+Round Pizza,Extra Items,Small,1.60
+Round Pizza,Extra Items,Medium,2.00
+Round Pizza,Extra Items,Large,2.35
+Round Pizza,Extra Items,XLarge,2.70
+Square Pizza,Cheese,"Small 7x9""/6pc",11.80
+Square Pizza,Cheese,"Medium 9x13""/8pc",14.40
+Square Pizza,Cheese,"Large 11x16""/12pc",17.65
+Square Pizza,Extra Items,Small,1.75
+Square Pizza,Extra Items,Medium,2.25
+Square Pizza,Extra Items,Large,2.55
+Tray Pizza,Cheese,18x24,31.05
+Tray Pizza,Extra Items,,5.00
+Tray Pizza,Primo's Special,,53.75
+Tray Pizza,Primo's Supreme,,58.35
+Stuffed Pizza,Cheese,,8.85
+Stuffed Pizza,Extra Items,,0.60
+Stuffed Pizza,Primo's Special,,13.10
+Stuffed Pizza,Primo's Supreme,,14.20
+Salads,Tossed,Small,5.60
+Salads,Tossed,Medium,7.80
+Salads,Tossed,Large,11.75
+Salads,Antipasto,Small,6.15
+Salads,Antipasto,Medium,10.20
+Salads,Antipasto,Large,14.50
+Salads,Greek,Small,6.15
+Salads,Greek,Medium,10.20
+Salads,Greek,Large,14.50
+Salads,Grilled Chicken,Small,7.80
+Salads,Grilled Chicken,Medium,11.35
+Salads,Grilled Chicken,Large,17.20
+Salads,Add Chicken to Any Salad,Small,2.20
+Salads,Add Chicken to Any Salad,Medium,2.55
+Salads,Add Chicken to Any Salad,Large,2.80
+Side Orders,Cole Slaw,Pint,2.95
+Side Orders,Onion Rings,,5.15
+Side Orders,French Fries,,3.10
+Side Orders,Pizza by the Slice,,4.00
+Side Orders,Deep Fried Mushrooms,,5.25
+Side Orders,Seasoned Potato Wedges,,4.70
+Side Orders,Garlic Sticks,1/2 Dozen,3.85
+Side Orders,Garlic Sticks,1 Dozen,5.90
+Side Orders,Garlic Sticks with Baked Mozzarella,1/2 Dozen,6.35
+Side Orders,Garlic Sticks with Baked Mozzarella,1 Dozen,10.55
+Side Orders,Deep Fried Cheese Stix,,5.70
+Side Orders,Pizza Sauce,,0.75
+Side Orders,Ranch,,1.25
+Side Orders,Garlic Cheese,,2.00
+Side Orders,Extra Garlic Stick,,0.75
+BBQ Ribs,Whole Slab,(for two),33.05
+BBQ Ribs,Short Ends,(9 bones),17.95
+BBQ Ribs,Long Ends,(9 bones),16.30
+BBQ Ribs,Rib Snacks,(5 bones),13.20
+Broasted Chicken,Chicken Dinner,(4 pc.),13.10
+Broasted Chicken,Chicken Snack,(2 pc.),9.60
+Broasted Chicken,8 Pieces,,21.25
+Broasted Chicken,16 Pieces,,31.75
+Broasted Chicken,20 Pieces,,35.90
+Broasted Chicken,24 Pieces,,40.00
+Chicken Tenders,6 Pieces,,11.85
+Chicken Tenders,12 Pieces,,19.05
+Chicken Tenders,18 Pieces,,25.00
+Chicken Tenders,24 Pieces,,30.15
+Wing Dings,6 Wing Dings,,7.75
+Wing Dings,12 Wing Dings,,14.25
+Wing Dings,24 Wing Dings,,24.90
+Wing Dings,36 Wing Dings,,37.25
+Combination Plates,Ribs & Chicken,,18.45
+Combination Plates,Ribs & Shrimp,,18.45
+Combination Plates,Chicken & Shrimp,,15.80
+Combination Plates,Ribs & Fish,,18.45
+Combination Plates,Chicken & Fish,,15.80
+Combination Plates,Shrimp & Frog Legs,,19.30
+Combination Plates,Primo Smorg,,26.00
+Seafood,Lake Perch,(6 pcs.),15.35
+Seafood,21 Shrimp in the Basket,,13.35
+Seafood,Shrimp Dinner,(7 pcs.),14.85
+Seafood,Fish Snack,(2 pcs.),11.65
+Seafood,Fish & Chips,(4 pcs.),15.80
+Seafood,Jumbo Frog Legs,,19.75
+Seafood,Cod 10 Piece Basket,,32.20
+Hand Battered Shrimp,Regular or Cajun,1/4 lb.,13.90
+Hand Battered Shrimp,Regular or Cajun,1/2 lb.,19.70
+Hand Battered Shrimp,Regular or Cajun,3/4 lb.,25.35
+Hand Battered Shrimp,Regular or Cajun,1 lb.,34.20
+Hand Battered Shrimp,Bucket of Jumbo Shrimp,(16 pcs.),30.25
+Desserts,Cheese Cake,(Strawberry & Cherry),6.25
+Desserts,Cookies,"(Oatmeal, Chocolate Chip & White Chocolate Macadamia Nut)",2.00
+Desserts,Oreo Pie,,6.25
+U Bake Pizza,Cheese,"13""x9"" Small",7.55
+U Bake Pizza,Cheese,"18""x13"" Large",10.55
+U Bake Pizza,Extra Items,Small,1.10
+U Bake Pizza,Extra Items,Large,1.65
+U Bake Pizza,U Bake Primo's Special,Small,13.05
+U Bake Pizza,U Bake Primo's Special,Large,18.80
+U Bake Pizza,U Bake Primo's Supreme,Small,14.70
+U Bake Pizza,U Bake Primo's Supreme,Large,21.30

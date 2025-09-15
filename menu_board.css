@@ -198,9 +198,23 @@ body {
     font-size: 2.6vh;
 }
 
+
 .menu-board-3-layout .item-price,
 .menu-board-3-layout .special-item-price,
 .menu-board-3-layout .variant-text-menu3,
 .menu-board-3-layout .variant-price-menu3 {
     font-size: 2.4vh;
+}
+
+/* Adjustments for menu_board_2 layout */
+.menu-board-2-layout > .category:nth-child(2) {
+    display: grid;
+    grid-template-rows: auto 2fr auto 1fr;
+    padding: 1vh; /* Re-apply padding since we are overriding .category */
+}
+
+.menu-board-2-layout > .category:nth-child(2) > .items {
+    flex: none; /* Disable flex behavior */
+    height: auto; /* Let the grid handle the height */
+    overflow-y: hidden; /* We don't want scrollbars if the grid works */
 }
