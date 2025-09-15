@@ -245,8 +245,8 @@ body {
 /* Reduce padding for Side Orders and Salads on menu_board_3 */
 .menu-board-3-layout > .category:nth-child(1) .item,
 .menu-board-3-layout > .category:nth-child(3) .item {
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-top: .5vh;
+    padding-bottom: .75vh;
 }
 
 .variants-on-one-row {
@@ -261,8 +261,8 @@ body {
 .menu-board-3-layout > .category:nth-child(4) .item,
 .menu-board-3-layout > .category:nth-child(4) .special-item-row,
 .menu-board-3-layout > .category:nth-child(4) .variant-row-menu3 {
-    padding-top: 0.2vh;
-    padding-bottom: 0.2vh;
+    padding-top: 0vh;
+    padding-bottom: 0vh;
 }
 
 /* Special style for the Fish & Chips item on menu_board_2 */

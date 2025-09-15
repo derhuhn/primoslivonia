@@ -26,6 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
+    function formatPrice(price) {
+        const fixedPrice = price.toFixed(2);
+        if (price < 10) {
+            return `$ ${fixedPrice}`;
+        }
+        return `$${fixedPrice}`;
+    }
+
     function renderMenu(data, categories, container) {
         categories.forEach(categoryName => {
             if (data[categoryName]) {
@@ -280,7 +288,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const itemPrice = document.createElement("div");
                 itemPrice.classList.add("fish-and-chips-price");
                 const variantPrice = Object.values(item.variants)[0];
-                itemPrice.textContent = `$${variantPrice.toFixed(2)}`;
+                itemPrice.textContent = formatPrice(variantPrice);
                 itemEl.appendChild(itemPrice);
 
             } else if (item.item === "Add Baked Cheese To Any Pasta") {
@@ -294,7 +302,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 variantsRow.classList.add('variants-on-one-row');
 
                 const variantsContent = Object.entries(item.variants).map(([variantName, variantPrice]) => {
-                    return `${variantName}: $${variantPrice.toFixed(2)}`;
+                    return `${variantName}: ${formatPrice(variantPrice)}`;
                 }).join('&nbsp;&nbsp;&nbsp;');
 
                 variantsRow.innerHTML = variantsContent;
@@ -309,7 +317,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const itemPrice = document.createElement("div");
                 itemPrice.classList.add("special-item-price");
-                itemPrice.textContent = `$${item.price.toFixed(2)}`;
+                itemPrice.textContent = formatPrice(item.price);
                 itemEl.appendChild(itemPrice);
             } else if ((isMenu3 && item.variants) || (categoryName === "Hand Battered Shrimp" && item.variants)) {
                 itemEl.classList.add("item");
@@ -325,7 +333,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     const itemPrice = document.createElement("div");
                     itemPrice.classList.add("special-item-price");
-                    itemPrice.textContent = `$${item.price.toFixed(2)}`;
+                    itemPrice.textContent = formatPrice(item.price);
                     baseItemRow.appendChild(itemPrice);
 
                     itemEl.appendChild(baseItemRow);
@@ -348,7 +356,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     const variantPriceEl = document.createElement('div');
                     variantPriceEl.classList.add('variant-price-menu3');
-                    variantPriceEl.textContent = `$${variantPrice.toFixed(2)}`;
+                    variantPriceEl.textContent = formatPrice(variantPrice);
                     variantRow.appendChild(variantPriceEl);
 
                     variantsContainer.appendChild(variantRow);
@@ -365,7 +373,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (item.price) {
                     const itemPrice = document.createElement("div");
                     itemPrice.classList.add("item-price");
-                    itemPrice.textContent = `$${item.price.toFixed(2)}`;
+                    itemPrice.textContent = formatPrice(item.price);
                     itemEl.appendChild(itemPrice);
                 } else if (item.variants) {
                     const variantsEl = document.createElement("div");
@@ -395,7 +403,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     variantPricesEl.classList.add("variant-prices");
                     Object.values(item.variants).forEach(variantPrice => {
                         const variantPriceEl = document.createElement("span");
-                        variantPriceEl.textContent = `$${variantPrice.toFixed(2)}`;
+                        variantPriceEl.textContent = formatPrice(variantPrice);
                         variantPricesEl.appendChild(variantPriceEl);
                     });
                     variantsEl.appendChild(variantPricesEl);
