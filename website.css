@@ -1,0 +1,261 @@
+/* Styles for the new responsive website */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #000b5c; /* Dark Red */
+    color: white;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+    display: flex; /* Use flexbox for the header */
+    flex-direction: column; /* Stack main content and payment methods vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.header-main-section {
+    display: flex; /* Flex container for logo and text content */
+    justify-content: center; /* Center logo and text block together horizontally */
+    align-items: center; /* Vertically center logo and text block */
+    width: 100%; /* Take full width */
+    padding: 1em 0; /* Add some vertical padding */
+}
+
+.header-logo-wrapper {
+    display: flex; /* Flex container for the image */
+    align-items: center; /* Vertically center the image */
+    margin-right: 20px; /* Space between logo and text */
+    height: auto; /* Allow height to be determined by content */
+}
+
+.header-logo { /* Styling for the image inside the wrapper */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure image scales without cropping */
+    max-height: 150px; /* Set a max-height for the logo in wide view */
+}
+
+.header-text-content {
+    text-align: center; /* Center text content */
+}
+
+header h4 { /* Target the h4 specifically within the header */
+    margin: 0;
+    font-size: 1.5em; /* Larger font size for Primo's Pizza */
+    padding-bottom: 0px;
+    font-weight: bold; /* Make it bold */
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+header .header-text-content p a {
+    color: white;
+    text-decoration: none;
+}
+
+.payment-methods-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 30px; /* Set a maximum height for the image */
+    margin-top: 0px; /* More space above the image */
+    padding: 0 0px; /* Add some padding to the sides */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+
+#menu-display {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px; /* Space between columns */
+}
+
+.menu-category {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu-category h2 {
+    color: #000b5c; /* Dark Red */
+    font-size: 2em;
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Base styling for all menu items */
+.menu-item {
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+/* Styling for items WITHOUT variants */
+.menu-item-no-variants {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* Styling for items WITH variants */
+.menu-item-has-variants {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+.menu-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    margin-bottom: 5px; /* Add some space below the item name */
+}
+
+.item-price {
+    font-weight: bold;
+    color: #555;
+    font-size: 1.2em;
+    margin-left: 15px;
+}
+
+.variant-price {
+    font-weight: bold;
+    color: #555;
+}
+
+.item-variants {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Reset margin, as it's handled by .menu-item h3 margin-bottom */
+    width: 100%; /* Ensure full width */
+}
+
+.item-variants li {
+    font-size: 1.2em;
+    color: #333; /* Changed to match general text color */
+    padding: 2px 0;
+    display: flex; /* Make it a flex container */
+    justify-content: space-between; /* Push variant name left, price right */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #menu-display {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+
+    .header-main-section {
+        flex-direction: row; /* Keep logo and text in a row */
+        padding: 1em 0; /* Adjust padding */
+        max-height: none; /* Remove max-height when not stacked */
+        justify-content: space-around; /* Distribute space between logo and text */
+        align-items: center; /* Vertically center items */
+    }
+
+    .header-logo-wrapper {
+        margin-right: 10px; /* Add some right margin for spacing */
+        margin-bottom: 0; /* Remove bottom margin when not stacked */
+        height: auto; /* Allow height to be determined by content */
+    }
+
+    .header-logo {
+        max-width: 150px; /* Shrink logo for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 150px; /* Set a max-height for the logo */
+    }
+
+    header h4 {
+        font-size: 1.8em; /* Adjust for smaller screens */
+        padding-bottom: 5px;
+    }
+
+    header p {
+        font-size: 0.8em; /* Smaller font for text */
+        margin: 2px 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .menu-category h2 {
+        font-size: 1.7em;
+    }
+
+    /* Adjustments for responsive menu items */
+    .menu-item-has-variants {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Ensure no-variants items remain on a single line */
+    .menu-item-no-variants {
+        flex-direction: row; /* Keep them in a row */
+        align-items: baseline; /* Align items */
+        justify-content: space-between; /* Space out item name and price */
+    }
+
+    .item-price {
+        margin-left: 0;
+        margin-top: 0; /* Reset margin-top for single line */
+    }
+
+    .item-variants {
+        text-align: left;
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-main-section {
+        justify-content: space-between; /* More aggressive spacing for very small screens */
+        padding: 0.5em 0;
+    }
+
+    .header-logo {
+        max-width: 60px; /* Further shrink logo for very small screens */
+        max-height: 60px; /* Further shrink logo for very small screens */
+    }
+
+    header h4 {
+        font-size: 1.5em; /* Further adjust for very small screens */
+    }
+
+    header p {
+        font-size: 0.7em;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .menu-category h2 {
+        font-size: 1.5em;
+    }
+
+    .menu-category {
+        padding: 15px;
+    }
+}
