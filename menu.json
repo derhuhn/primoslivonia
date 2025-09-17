@@ -463,32 +463,32 @@
   "Combination Plates": [
     {
       "item": "Ribs & Chicken",
-      "price": 18.45,
+      "price": 18.30,
       "specialLayout": true
     },
     {
       "item": "Ribs & Shrimp",
-      "price": 18.45,
+      "price": 18.30,
       "specialLayout": true
     },
     {
       "item": "Chicken & Shrimp",
-      "price": 15.8,
+      "price": 18.30,
       "specialLayout": true
     },
     {
       "item": "Ribs & Fish",
-      "price": 18.45,
+      "price": 18.30,
       "specialLayout": true
     },
     {
       "item": "Chicken & Fish",
-      "price": 15.8,
+      "price": 18.30,
       "specialLayout": true
     },
     {
       "item": "Shrimp & Frog Legs",
-      "price": 19.3,
+      "price": 18.30,
       "specialLayout": true
     },
     {

@@ -91,7 +91,7 @@ Cheese                   7x9"/6pc 9x13"/8pc 11x16"/12pc
                         11.80    14.40     17.65
 Extra Items              1.75     2.25      2.55
 
-Tray Pizza 18x24
+Tray Pizza 18"x24"
 Cheese .................... 31.05
 Extra Items ................ 5.00
 Primo's Special* ........... 53.75
