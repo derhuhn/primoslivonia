@@ -8,7 +8,7 @@ Broasted Chicken
 Chicken Tenders
 Wing Dings
 Seafood
-Bbq Ribs
+BBQ Ribs
 Hand Battered Shrimp
 Combination Plates
 Pasta
