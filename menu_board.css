@@ -137,7 +137,7 @@ body {
     position: absolute;
     bottom: 0vh; /* Y padding */
     left: 0vh; /* X padding */
-    width: 16vw; /* Adjust size as needed */
+    width: 1vw; /* Adjust size as needed */
     height: auto;
     z-index: 10; /* Ensure it's above other content */
 }

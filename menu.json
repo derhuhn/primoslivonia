@@ -49,8 +49,7 @@
        {
       "item": "NEW Cheese Bread",
       "variants": {
-        "10\"": 10.95,
-        "14\"": 12.95
+        "10\"": 10.95
       }
     }
 
@@ -68,12 +67,12 @@
     },
     {
       "item": "Italian",
-      "price": 11.95,
+      "price": 10.95,
       "specialLayout": true
     },
     {
       "item": "Turkey",
-      "price": 10.35,
+      "price": 10.95,
       "specialLayout": true
     },
     {
@@ -85,7 +84,7 @@
     },
     {
       "item": "Ham & Cheese",
-      "price": 10.35,
+      "price": 10.95,
       "specialLayout": true
     },
     {
@@ -95,7 +94,7 @@
     },
     {
       "item": "Vegetarian",
-      "price": 10.35,
+      "price": 10.95,
       "specialLayout": true
     },
     {
@@ -140,25 +139,27 @@
     {
       "item": "Spaghetti/Mostaccioli",
       "variants": {
+        "Pint (1 Serving)": 8.2,
+        "Quart (1-2 Servings)": 13.25,
         "with Mushrooms (1 Serving)": 8.7,
         "with Mushrooms (1-2 Servings)": 14.15,
         "with Meatballs (1 Serving)": 9.35,
         "with Meatballs (1-2 Servings)": 14.95,
-        "with Meatballs & Mushrooms (1 Serving)": 10.6,
-        "with Meatballs & Mushrooms (1-2 Servings)": 16.2
+        "with MB & Mushrooms (1 Serving)": 10.6,
+        "with MB & Mushrooms (1-2 Servings)": 16.2
       }
     },
     {
       "item": "Ravioli (Meat or Cheese)",
       "variants": {
-        "(1 Serving)": 10.4,
-        "(1-2 Servings)": 15.7,
+        "Pint (1 Serving)": 10.4,
+        "Quart (1-2 Servings)": 15.7,
         "with Mushrooms (1 Serving)": 11.1,
         "with Mushrooms (2 Servings)": 16.8,
         "with Meatballs (1 Serving)": 11.5,
         "with Meatballs (2 Servings)": 17.85,
-        "with Meatballs & Mushrooms (1 Serving)": 12.4,
-        "with Meatballs & Mushrooms (2 Servings)": 19.2
+        "with MB & Mushrooms (1 Serving)": 12.4,
+        "with MB & Mushrooms (2 Servings)": 19.2
       }
     },
     {
@@ -263,9 +264,9 @@
     {
       "item": "Extra Items",
       "variants": {
-        "Small": 1.75,
-        "Medium": 2.25,
-        "Large": 2.55
+        "Small": 1.6,
+        "Medium": 2.0,
+        "Large": 2.35
       }
     }
   ],
@@ -398,6 +399,11 @@
     {
       "item": "8 Pieces",
       "price": 21.25,
+      "specialLayout": true
+    },
+      {
+      "item": "12 Pieces",
+      "price": 28.25,
       "specialLayout": true
     },
     {
