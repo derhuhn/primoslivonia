@@ -29,18 +29,32 @@ document.addEventListener('DOMContentLoaded', () => {
                                 const listItem = document.createElement('li');
                                 listItem.classList.add('menu-item');
 
-                                const itemName = document.createElement('h3');
-                                itemName.textContent = item.item;
-                                listItem.appendChild(itemName);
-
-                                if (item.price) {
-                                    listItem.classList.add('menu-item-no-variants');
-                                    const itemPrice = document.createElement('p');
-                                    itemPrice.classList.add('item-price');
-                                    itemPrice.textContent = `$${item.price.toFixed(2)}`;
-                                    listItem.appendChild(itemPrice);
-                                } else if (item.variants) {
+                                if (item.price && item.variants) {
+                                    // Item with both price and variants
                                     listItem.classList.add('menu-item-has-variants');
+
+                                    const baseItemLine = document.createElement('div');
+                                    baseItemLine.classList.add('menu-item-line');
+                                    baseItemLine.innerHTML = `<h3>${item.item}</h3><p class="item-price">$${item.price.toFixed(2)}</p>`;
+                                    listItem.appendChild(baseItemLine);
+
+                                    for (const variant in item.variants) {
+                                        const variantLine = document.createElement('div');
+                                        variantLine.classList.add('menu-item-line');
+                                        variantLine.innerHTML = `<h3>${variant}</h3><p class="variant-price">$${item.variants[variant].toFixed(2)}</p>`;
+                                        listItem.appendChild(variantLine);
+                                    }
+                                } else if (item.price) {
+                                    // Item with only a price
+                                    listItem.classList.add('menu-item-no-variants');
+                                    listItem.innerHTML = `<h3>${item.item}</h3><p class="item-price">$${item.price.toFixed(2)}</p>`;
+                                } else if (item.variants) {
+                                    // Item with only variants
+                                    listItem.classList.add('menu-item-has-variants');
+                                    const itemName = document.createElement('h3');
+                                    itemName.textContent = item.item;
+                                    listItem.appendChild(itemName);
+
                                     const variantsList = document.createElement('ul');
                                     variantsList.classList.add('item-variants');
                                     for (const variant in item.variants) {
@@ -50,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     }
                                     listItem.appendChild(variantsList);
                                 }
+
                                 itemList.appendChild(listItem);
                             });
                             categorySection.appendChild(itemList);

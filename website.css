@@ -156,6 +156,7 @@ header .header-text-content p a {
 .variant-price {
     font-weight: bold;
     color: #555;
+    font-size: 1.2em;
 }
 
 .item-variants {
@@ -169,8 +170,12 @@ header .header-text-content p a {
     font-size: 1.2em;
     color: #333; /* Changed to match general text color */
     padding: 2px 0;
-    display: flex; /* Make it a flex container */
-    justify-content: space-between; /* Push variant name left, price right */
+}
+
+.menu-item-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 /* Responsive adjustments */
@@ -220,7 +225,6 @@ header .header-text-content p a {
     /* Adjustments for responsive menu items */
     .menu-item-has-variants {
         flex-direction: column;
-        align-items: flex-start;
     }
 
     /* Ensure no-variants items remain on a single line */
