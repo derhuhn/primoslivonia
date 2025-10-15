@@ -57,12 +57,12 @@
   "Submarines": [
     {
       "item": "Chicken Parmesan",
-      "price": 13.0,
+      "price": 15.0,
       "specialLayout": true
     },
     {
       "item": "Chicken Tender",
-      "price": 13.0,
+      "price": 15.0,
       "specialLayout": true
     },
     {
@@ -178,30 +178,48 @@
   ],
   "Specialty Pizzas": [
     {
-      "item": "BBQ Chicken",
+      "item": "BBQ Chicken or BLT Pizza",
       "variants": {
-        "Small": 16.0,
-        "Medium": 19.65,
-        "Large": 23.7,
-        "XLarge (Round Only)": 28.65
+        "Small": 16.60,
+        "Medium": 20.4,
+        "Large": 24.7,
+        "XLarge (Round Only)": 29.75
       }
     },
     {
       "item": "Hawaiian",
       "variants": {
-        "Small": 14.6,
-        "Medium": 17.9,
-        "Large": 21.7,
-        "XLarge (Round Only)": 26.3
+        "Small": 15.0,
+        "Medium": 18.4,
+        "Large": 22.35,
+        "XLarge (Round Only)": 27.05
       }
     },
     {
-      "item": "BLT",
+      "item": "Green Pizza",
       "variants": {
-        "Small": 16.0,
-        "Medium": 19.65,
-        "Large": 23.7,
-        "XLarge (Round Only)": 28.65
+        "Small": 13.4,
+        "Medium": 16.4,
+        "Large": 20.00,
+        "XLarge (Round Only)": 24.35
+      }
+    },
+    {
+      "item": "Veggie",
+      "variants": {
+        "Small": 18.2,
+        "Medium": 22.4,
+        "Large": 27.05,
+        "XLarge (Round Only)": 32.40
+      }
+    },
+    {
+      "item": "Meat",
+      "variants": {
+        "Small": 19.8,
+        "Medium": 24.4,
+        "Large": 29.4,
+        "XLarge (Round Only)": 35.15
       }
     },
     {
@@ -216,21 +234,13 @@
     {
       "item": "Primo's Supreme",
       "variants": {
-        "Small": 20.1,
-        "Medium": 25.15,
-        "Large": 29.5,
-        "XLarge (Round Only)": 35.65
-      }
-    },
-    {
-      "item": "Green Pizza",
-      "variants": {
-        "Small": 13.2,
-        "Medium": 16.15,
-        "Large": 19.65,
-        "XLarge (Round Only)": 23.95
+        "Small": 21.4,
+        "Medium": 26.40,
+        "Large": 36.75,
+        "XLarge (Round Only)": 37.85
       }
     }
+    
   ],
   "Round Pizza": [
     {
@@ -598,8 +608,8 @@
     {
       "item": "U Bake Primo's Supreme",
       "variants": {
-        "Small": 14.7,
-        "Large": 21.3
+        "Small": 14.15,
+        "Large": 20.45
       }
     },
     {

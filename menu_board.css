@@ -265,6 +265,10 @@ body {
     padding-bottom: 0vh;
 }
 
+.specialty-pizzas-column .item {
+    padding: 0.45vh 0;
+}
+
 /* Special style for the Fish & Chips item on menu_board_2 */
 .fish-and-chips-special {
     background-color: lightgray;

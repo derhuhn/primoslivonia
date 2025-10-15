@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         column1.appendChild(roundPizzaItems);
 
         const squarePizzaTitle = document.createElement("h1");
-        squarePizzaTitle.textContent = "Detroit Square Pizza";
+        squarePizzaTitle.textContent = "Square Pizza";
         squarePizzaTitle.classList.add("detroit-square-pizza-header");
         squarePizzaTitle.style.marginTop = "2vh";
         column1.appendChild(squarePizzaTitle);
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
         container.appendChild(column2);
 
         const specialtyPizzaEl = document.createElement("div");
-        specialtyPizzaEl.classList.add("category");
+        specialtyPizzaEl.classList.add("category", "specialty-pizzas-column");
         const specialtyPizzaTitle = document.createElement("h1");
         specialtyPizzaTitle.textContent = "Specialty Pizzas";
         specialtyPizzaEl.appendChild(specialtyPizzaTitle);
