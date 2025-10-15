@@ -3,7 +3,7 @@ Square Pizza
 Tray Pizza
 Stuffed Pizza
 Specialty Pizzas
-U Bake Pizzas
+U Bake Pizza
 Broasted Chicken
 Chicken Tenders
 Wing Dings
@@ -18,3 +18,4 @@ Salads
 Sandwiches
 Side Orders
 Extras
+Desserts
