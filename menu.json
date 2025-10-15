@@ -435,22 +435,22 @@
   "Chicken Tenders": [
     {
       "item": "6 Pieces",
-      "price": 11.85,
+      "price": 14.35,
       "specialLayout": true
     },
     {
       "item": "12 Pieces",
-      "price": 19.05,
+      "price": 21.55,
       "specialLayout": true
     },
     {
       "item": "18 Pieces",
-      "price": 25.0,
+      "price": 27.50,
       "specialLayout": true
     },
     {
       "item": "24 Pieces",
-      "price": 30.15,
+      "price": 32.65,
       "specialLayout": true
     }
   ],
