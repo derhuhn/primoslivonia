@@ -30,41 +30,58 @@ document.addEventListener('DOMContentLoaded', () => {
                                 listItem.classList.add('menu-item');
 
                                 if (item.price && item.variants) {
-                                    // Item with both price and variants
-                                    listItem.classList.add('menu-item-has-variants');
+                                    // Special case for items with both price and variants
+                                    listItem.classList.add('menu-item-has-variants'); // This will make it a column
 
-                                    const baseItemLine = document.createElement('div');
-                                    baseItemLine.classList.add('menu-item-line');
-                                    baseItemLine.innerHTML = `<h3>${item.item}</h3><p class="item-price">$${item.price.toFixed(2)}</p>`;
-                                    listItem.appendChild(baseItemLine);
+                                    // Container for the main item and price
+                                    const mainItemDiv = document.createElement('div');
+                                    mainItemDiv.classList.add('menu-item-no-variants'); // Use existing style for this line
 
+                                    const itemName = document.createElement('h3');
+                                    itemName.textContent = item.item;
+                                    mainItemDiv.appendChild(itemName);
+
+                                    const itemPrice = document.createElement('p');
+                                    itemPrice.classList.add('item-price');
+                                    itemPrice.textContent = `$${item.price.toFixed(2)}`;
+                                    mainItemDiv.appendChild(itemPrice);
+
+                                    listItem.appendChild(mainItemDiv);
+
+                                    // Now add the variants
+                                    const variantsList = document.createElement('ul');
+                                    variantsList.classList.add('item-variants', 'special-variant-list');
                                     for (const variant in item.variants) {
-                                        const variantLine = document.createElement('div');
-                                        variantLine.classList.add('menu-item-line');
-                                        variantLine.innerHTML = `<h3>${variant}</h3><p class="variant-price">$${item.variants[variant].toFixed(2)}</p>`;
-                                        listItem.appendChild(variantLine);
+                                        const variantItem = document.createElement('li');
+                                        variantItem.innerHTML = `<span>${variant}</span> <span class="variant-price">$${item.variants[variant].toFixed(2)}</span>`;
+                                        variantsList.appendChild(variantItem);
                                     }
-                                } else if (item.price) {
-                                    // Item with only a price
-                                    listItem.classList.add('menu-item-no-variants');
-                                    listItem.innerHTML = `<h3>${item.item}</h3><p class="item-price">$${item.price.toFixed(2)}</p>`;
-                                } else if (item.variants) {
-                                    // Item with only variants
-                                    listItem.classList.add('menu-item-has-variants');
+                                    listItem.appendChild(variantsList);
+
+                                } else {
+                                    // Existing logic for other items
                                     const itemName = document.createElement('h3');
                                     itemName.textContent = item.item;
                                     listItem.appendChild(itemName);
 
-                                    const variantsList = document.createElement('ul');
-                                    variantsList.classList.add('item-variants');
-                                    for (const variant in item.variants) {
-                                        const variantItem = document.createElement('li');
-                                        variantItem.innerHTML = `${variant}: <span class="variant-price">$${item.variants[variant].toFixed(2)}</span>`;
-                                        variantsList.appendChild(variantItem);
+                                    if (item.price) {
+                                        listItem.classList.add('menu-item-no-variants');
+                                        const itemPrice = document.createElement('p');
+                                        itemPrice.classList.add('item-price');
+                                        itemPrice.textContent = `$${item.price.toFixed(2)}`;
+                                        listItem.appendChild(itemPrice);
+                                    } else if (item.variants) {
+                                        listItem.classList.add('menu-item-has-variants');
+                                        const variantsList = document.createElement('ul');
+                                        variantsList.classList.add('item-variants');
+                                        for (const variant in item.variants) {
+                                            const variantItem = document.createElement('li');
+                                            variantItem.innerHTML = `${variant}: <span class="variant-price">$${item.variants[variant].toFixed(2)}</span>`;
+                                            variantsList.appendChild(variantItem);
+                                        }
+                                        listItem.appendChild(variantsList);
                                     }
-                                    listItem.appendChild(variantsList);
                                 }
-
                                 itemList.appendChild(listItem);
                             });
                             categorySection.appendChild(itemList);
