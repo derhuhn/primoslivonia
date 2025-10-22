@@ -45,13 +45,9 @@
         "1/2 Dozen": 6.35,
         "1 Dozen": 10.55
       }
-    },
-       {
-      "item": "NEW Cheese Bread",
-      "variants": {
-        "10\"": 10.95
-      }
     }
+
+    
 
   ],
   "Submarines": [
