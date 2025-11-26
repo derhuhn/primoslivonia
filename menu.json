@@ -1,6 +1,5 @@
 {
   "Side Orders": [
- 
     {
       "item": "Cole Slaw",
       "variants": {
@@ -46,9 +45,6 @@
         "1 Dozen": 10.55
       }
     }
-
-    
-
   ],
   "Submarines": [
     {
@@ -236,7 +232,6 @@
         "XLarge (Round Only)": 37.85
       }
     }
-    
   ],
   "Round Pizza": [
     {
@@ -407,7 +402,7 @@
       "price": 21.25,
       "specialLayout": true
     },
-      {
+    {
       "item": "12 Pieces",
       "price": 28.25,
       "specialLayout": true
@@ -533,7 +528,6 @@
         "(2 pcs.)": 11.65
       }
     },
- 
     {
       "item": "Jumbo Frog Legs",
       "price": 19.75,
@@ -550,7 +544,7 @@
         "(16 pcs.)": 30.25
       }
     },
-       {
+    {
       "item": "Fish & Chips",
       "variants": {
         "(4 pcs.)": 15.8
@@ -569,6 +563,11 @@
     }
   ],
   "Desserts": [
+    {
+      "item": "NEW Banana Pudding",
+      "price": 6.25,
+      "specialLayout": true
+    },
     {
       "item": "Cheese Cake",
       "variants": {
@@ -658,6 +657,5 @@
         "(Serves 3-5)": 35.2
       }
     }
-    
   ]
 }

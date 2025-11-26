@@ -389,4 +389,52 @@ header .header-text-content p a {
 
 .farmington-road-text {
     font-size: 50%;
+}/* Category Navigation */
+#category-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    display: flex;
+    gap: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* Hide scrollbar but keep functionality */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+
+#category-nav::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Webkit */
+}
+
+.category-nav-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.category-nav-button:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-1px);
+}
+
+.category-nav-button.active {
+    background-color: #000b5c;
+    color: white;
+    border-color: #000b5c;
 }

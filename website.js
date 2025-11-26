@@ -13,10 +13,29 @@ document.addEventListener('DOMContentLoaded', () => {
             fetch('menu.json')
                 .then(response => response.json())
                 .then(menuData => {
+                    const categoryNav = document.getElementById('category-nav');
+
                     categoryOrder.forEach(category => {
                         if (menuData[category]) { // Only render categories that exist in menu.json
+                            // Create Navigation Button
+                            const navButton = document.createElement('button');
+                            navButton.classList.add('category-nav-button');
+                            navButton.textContent = category;
+                            navButton.addEventListener('click', () => {
+                                const section = document.getElementById(category.replace(/\s+/g, '-').toLowerCase());
+                                if (section) {
+                                    // Offset for sticky header/nav
+                                    const yOffset = -70; 
+                                    const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                                    window.scrollTo({top: y, behavior: 'smooth'});
+                                }
+                            });
+                            categoryNav.appendChild(navButton);
+
                             const categorySection = document.createElement('section');
                             categorySection.classList.add('menu-category');
+                            // Add ID for navigation
+                            categorySection.id = category.replace(/\s+/g, '-').toLowerCase();
 
                             const categoryTitle = document.createElement('h2');
                             categoryTitle.textContent = category;
@@ -88,6 +107,26 @@ document.addEventListener('DOMContentLoaded', () => {
                             menuDisplay.appendChild(categorySection);
                         }
                     });
+
+                    // Scroll Spy Logic
+                    window.addEventListener('scroll', () => {
+                        const fromTop = window.scrollY + 100; // Adjust offset
+                        const navButtons = document.querySelectorAll('.category-nav-button');
+                        
+                        navButtons.forEach(link => {
+                            const section = document.getElementById(link.textContent.replace(/\s+/g, '-').toLowerCase());
+                            if (section && 
+                                section.offsetTop <= fromTop && 
+                                section.offsetTop + section.offsetHeight > fromTop) {
+                                link.classList.add('active');
+                                // Scroll nav to keep active button in view
+                                link.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                            } else {
+                                link.classList.remove('active');
+                            }
+                        });
+                    });
+
                 })
                 .catch(error => {
                     console.error('Error fetching menu data:', error);
