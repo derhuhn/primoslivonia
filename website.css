@@ -9,46 +9,67 @@ body {
 }
 
 header {
-    background-color: #000b5c; /* Dark Red */
+    background-color: #000b5c;
+    /* Dark Red */
     color: white;
     padding: 1em;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
-    display: flex; /* Use flexbox for the header */
-    flex-direction: column; /* Stack main content and payment methods vertically */
-    align-items: center; /* Center items horizontally */
+    display: flex;
+    /* Use flexbox for the header */
+    flex-direction: column;
+    /* Stack main content and payment methods vertically */
+    align-items: center;
+    /* Center items horizontally */
 }
 
 .header-main-section {
-    display: flex; /* Flex container for logo and text content */
-    justify-content: center; /* Center logo and text block together horizontally */
-    align-items: center; /* Vertically center logo and text block */
-    width: 100%; /* Take full width */
-    padding: 1em 0; /* Add some vertical padding */
+    display: flex;
+    /* Flex container for logo and text content */
+    justify-content: center;
+    /* Center logo and text block together horizontally */
+    align-items: center;
+    /* Vertically center logo and text block */
+    width: 100%;
+    /* Take full width */
+    padding: 1em 0;
+    /* Add some vertical padding */
 }
 
 .header-logo-wrapper {
-    display: flex; /* Flex container for the image */
-    align-items: center; /* Vertically center the image */
-    margin-right: 20px; /* Space between logo and text */
-    height: auto; /* Allow height to be determined by content */
+    display: flex;
+    /* Flex container for the image */
+    align-items: center;
+    /* Vertically center the image */
+    margin-right: 20px;
+    /* Space between logo and text */
+    height: auto;
+    /* Allow height to be determined by content */
 }
 
-.header-logo { /* Styling for the image inside the wrapper */
-    width: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure image scales without cropping */
-    max-height: 150px; /* Set a max-height for the logo in wide view */
+.header-logo {
+    /* Styling for the image inside the wrapper */
+    width: auto;
+    /* Maintain aspect ratio */
+    object-fit: contain;
+    /* Ensure image scales without cropping */
+    max-height: 150px;
+    /* Set a max-height for the logo in wide view */
 }
 
 .header-text-content {
-    text-align: center; /* Center text content */
+    text-align: center;
+    /* Center text content */
 }
 
-header h4 { /* Target the h4 specifically within the header */
+header h4 {
+    /* Target the h4 specifically within the header */
     margin: 0;
-    font-size: 1.5em; /* Larger font size for Primo's Pizza */
+    font-size: 1.5em;
+    /* Larger font size for Primo's Pizza */
     padding-bottom: 0px;
-    font-weight: bold; /* Make it bold */
+    font-weight: bold;
+    /* Make it bold */
 }
 
 header p {
@@ -64,10 +85,14 @@ header .header-text-content p a {
 .payment-methods-img {
     max-width: 100%;
     height: auto;
-    max-height: 20px; /* Set a maximum height for the image */
-    margin-top: 0px; /* More space above the image */
-    padding: 0 0px; /* Add some padding to the sides */
-    box-sizing: border-box; /* Include padding in the width */
+    max-height: 20px;
+    /* Set a maximum height for the image */
+    margin-top: 0px;
+    /* More space above the image */
+    padding: 0 0px;
+    /* Add some padding to the sides */
+    box-sizing: border-box;
+    /* Include padding in the width */
 }
 
 .header-secondary-section {
@@ -90,8 +115,10 @@ header .header-text-content p a {
     margin: 20px auto;
     padding: 0 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
-    gap: 20px; /* Space between columns */
+    grid-template-columns: 1fr 1fr;
+    /* Two columns */
+    gap: 20px;
+    /* Space between columns */
 }
 
 .menu-category {
@@ -99,11 +126,12 @@ header .header-text-content p a {
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .menu-category h2 {
-    color: #000b5c; /* Dark Red */
+    color: #000b5c;
+    /* Dark Red */
     font-size: 2em;
     margin-top: 0;
     border-bottom: 2px solid #eee;
@@ -138,13 +166,15 @@ header .header-text-content p a {
 /* Styling for items WITH variants */
 .menu-item-has-variants {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
+    flex-direction: column;
+    /* Stack children vertically */
 }
 
 .menu-item h3 {
     margin: 0;
     font-size: 1.2em;
-    margin-bottom: 0px; /* Add some space below the item name */
+    margin-bottom: 0px;
+    /* Add some space below the item name */
 }
 
 .item-price {
@@ -162,16 +192,21 @@ header .header-text-content p a {
 .item-variants {
     list-style: none;
     padding: 0;
-    margin: 0; /* Reset margin, as it's handled by .menu-item h3 margin-bottom */
-    width: 100%; /* Ensure full width */
+    margin: 0;
+    /* Reset margin, as it's handled by .menu-item h3 margin-bottom */
+    width: 100%;
+    /* Ensure full width */
 }
 
 .item-variants li {
     font-size: 1.2em;
-    color: #333; /* Changed to match general text color */
+    color: #333;
+    /* Changed to match general text color */
     padding: 2px 0;
-    display: flex; /* Make it a flex container */
-    justify-content: space-between; /* Push variant name left, price right */
+    display: flex;
+    /* Make it a flex container */
+    justify-content: space-between;
+    /* Push variant name left, price right */
 }
 
 .special-variant-list li {
@@ -182,36 +217,50 @@ header .header-text-content p a {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     #menu-display {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
+        grid-template-columns: 1fr;
+        /* Single column on smaller screens */
     }
 
     .header-main-section {
-        flex-direction: row; /* Keep logo and text in a row */
-        padding: 1em 0; /* Adjust padding */
-        max-height: none; /* Remove max-height when not stacked */
-        justify-content: space-around; /* Distribute space between logo and text */
-        align-items: center; /* Vertically center items */
+        flex-direction: row;
+        /* Keep logo and text in a row */
+        padding: 1em 0;
+        /* Adjust padding */
+        max-height: none;
+        /* Remove max-height when not stacked */
+        justify-content: space-around;
+        /* Distribute space between logo and text */
+        align-items: center;
+        /* Vertically center items */
     }
 
     .header-logo-wrapper {
-        margin-right: 10px; /* Add some right margin for spacing */
-        margin-bottom: 0; /* Remove bottom margin when not stacked */
-        height: auto; /* Allow height to be determined by content */
+        margin-right: 10px;
+        /* Add some right margin for spacing */
+        margin-bottom: 0;
+        /* Remove bottom margin when not stacked */
+        height: auto;
+        /* Allow height to be determined by content */
     }
 
     .header-logo {
-        max-width: 100px; /* Shrink logo for smaller screens */
-        height: auto; /* Maintain aspect ratio */
-        max-height: 100px; /* Set a max-height for the logo */
+        max-width: 100px;
+        /* Shrink logo for smaller screens */
+        height: auto;
+        /* Maintain aspect ratio */
+        max-height: 100px;
+        /* Set a max-height for the logo */
     }
 
     header h4 {
-        font-size: 1.8em; /* Adjust for smaller screens */
+        font-size: 1.8em;
+        /* Adjust for smaller screens */
         padding-bottom: 5px;
     }
 
     header p {
-        font-size: 0.8em; /* Smaller font for text */
+        font-size: 0.8em;
+        /* Smaller font for text */
         margin: 2px 0;
     }
 
@@ -231,14 +280,18 @@ header .header-text-content p a {
 
     /* Ensure no-variants items remain on a single line */
     .menu-item-no-variants {
-        flex-direction: row; /* Keep them in a row */
-        align-items: baseline; /* Align items */
-        justify-content: space-between; /* Space out item name and price */
+        flex-direction: row;
+        /* Keep them in a row */
+        align-items: baseline;
+        /* Align items */
+        justify-content: space-between;
+        /* Space out item name and price */
     }
 
     .item-price {
         margin-left: 0;
-        margin-top: 0; /* Reset margin-top for single line */
+        margin-top: 0;
+        /* Reset margin-top for single line */
     }
 
     .item-variants {
@@ -325,47 +378,89 @@ header .header-text-content p a {
     .menu-category {
         padding: 15px;
     }
-}/* CSS */
+}
+
+/* CSS */
 .button-74 {
-  background-color: #fbeee0;
-  border: 2px solid #422800;
-  border-radius: 30px;
-  box-shadow: #ffffff 4px 4px 0 0;
-  color: #422800;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 0 18px;
-  line-height: 30px;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #ffffff 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
 }
 
-.button-74:hover {
 
-}
 
 .button-74:active {
-  box-shadow: #ffffff 2px 2px 0 0;
-  transform: translate(2px, 2px);
+    box-shadow: #ffffff 2px 2px 0 0;
+    transform: translate(2px, 2px);
 }
 
 @media (min-width: 768px) {
-  .button-74 {
-    min-width: 120px;
-    padding: 0 15px;
-  }
+    .button-74 {
+        min-width: 120px;
+        padding: 0 15px;
+    }
+
+    /* Desktop Header Redesign */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        max-width: 100%;
+    }
+
+    .header-main-section {
+        display: contents;
+        /* Flattens the structure so children participate in header flex */
+    }
+
+    .header-logo-wrapper {
+        flex: 0 0 auto;
+        margin-right: 0;
+        order: 1;
+    }
+
+    .header-text-content {
+        flex: 1 1 auto;
+        text-align: center;
+        margin: 0 20px;
+        order: 2;
+    }
+
+    .header-secondary-section {
+        flex: 0 0 auto;
+        margin-top: 0;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+        order: 3;
+        width: auto;
+    }
+
+    .payment-methods-wrapper {
+        margin-bottom: 5px;
+    }
 }
 
 .google-form-container {
     position: relative;
     overflow: hidden;
-    padding-top: 129%; /* This is (height / width) * 100% for the original 823/640 aspect ratio */
+    padding-top: 129%;
+    /* This is (height / width) * 100% for the original 823/640 aspect ratio */
     margin: 20px auto;
     max-width: 100%;
 }
@@ -382,35 +477,44 @@ header .header-text-content p a {
 .header-images-row {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the images horizontally */
-    gap: 10px; /* Space between the images */
-    margin-top: 10px; /* Add some space above the row */
+    justify-content: center;
+    /* Center the images horizontally */
+    gap: 10px;
+    /* Space between the images */
+    margin-top: 10px;
+    /* Add some space above the row */
 }
 
 .farmington-road-text {
     font-size: 50%;
-}/* Category Navigation */
+}
+
+/* Category Navigation */
 #category-nav {
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0.95);
     padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow-x: auto;
     white-space: nowrap;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on iOS */
     display: flex;
     gap: 10px;
     padding-left: 15px;
     padding-right: 15px;
     /* Hide scrollbar but keep functionality */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
 }
 
 #category-nav::-webkit-scrollbar {
-    display: none; /* Chrome/Safari/Webkit */
+    display: none;
+    /* Chrome/Safari/Webkit */
 }
 
 .category-nav-button {
