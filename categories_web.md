@@ -1,3 +1,4 @@
+Featured
 Round Pizza
 Toppings
 Square Pizza

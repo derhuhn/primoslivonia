@@ -1,4 +1,13 @@
 {
+  "Featured": [
+    {
+      "item": "Fish & Chips",
+      "subtitle": "(4 pieces)",
+      "description": "French Fries, Cole Slaw, Dinner Roll, Tartar Sauce",
+      "price": 15.8,
+      "image": "fish.png"
+    }
+  ],
   "Side Orders": [
     {
       "item": "Cole Slaw",
