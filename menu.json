@@ -171,6 +171,7 @@
   "Specialty Pizzas": [
     {
       "item": "BBQ Chicken or BLT Pizza",
+      "toppings": "Cheese, Chicken, Red Onion, Bacon, BBQ Sauce (No Pizza Sauce)",
       "variants": {
         "Small": 16.60,
         "Medium": 20.4,
@@ -180,6 +181,7 @@
     },
     {
       "item": "Hawaiian",
+      "toppings": "Pizza Sauce, Cheese, Ham, Pineapple",
       "variants": {
         "Small": 15.0,
         "Medium": 18.4,
@@ -189,6 +191,7 @@
     },
     {
       "item": "Green Pizza",
+      "toppings": "Oil, Salt and Garlic, Cheese, Spinach, Minced Garlic",
       "variants": {
         "Small": 13.4,
         "Medium": 16.4,
@@ -198,6 +201,7 @@
     },
     {
       "item": "Veggie",
+      "toppings": "Mushroom, Onion, Green Pepper, Black Olive",
       "variants": {
         "Small": 18.2,
         "Medium": 22.4,
@@ -207,6 +211,7 @@
     },
     {
       "item": "Meat",
+      "toppings": "Pepperoni, Ham, Bacon, Italian Sausage, Hamburger",
       "variants": {
         "Small": 19.8,
         "Medium": 24.4,
@@ -216,6 +221,7 @@
     },
     {
       "item": "Primo's Special",
+      "toppings": "Cheese, Pepperoni, Ham, Mushrooms, Green Pepper, Bacon, Onions (Anchovies on Request)",
       "variants": {
         "Small": 19.8,
         "Medium": 24.4,
@@ -225,6 +231,7 @@
     },
     {
       "item": "Primo's Supreme",
+      "toppings": "Pepperoni, Ham, Bacon, Hamburger, Green Pepper, Mushrooms, Italian Sausage, Onions, Hot Peppers (Anchovies on Request)",
       "variants": {
         "Small": 21.4,
         "Medium": 26.40,
@@ -251,6 +258,28 @@
         "Large": 2.35,
         "XLarge": 2.7
       }
+    }
+  ],
+  "Toppings": [
+    {
+      "item": "Pepperoni • Bacon • Hamburger • Green Pepper • Anchovies",
+      "specialLayout": true
+    },
+    {
+      "item": "Green Olives • Ham • Mushrooms • Black Olives • Italian Sausage",
+      "specialLayout": true
+    },
+    {
+      "item": "Onions • Pineapple • Sliced Tomatoes • Mild Banana Peppers",
+      "specialLayout": true
+    },
+    {
+      "item": "Spinach • Artichoke • Sweet Red Onions • Chicken • Broccoli",
+      "specialLayout": true
+    },
+    {
+      "item": "Feta Cheese • Jalapeños",
+      "specialLayout": true
     }
   ],
   "Square Pizza": [

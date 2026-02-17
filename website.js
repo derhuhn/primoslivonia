@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 const section = document.getElementById(category.replace(/\s+/g, '-').toLowerCase());
                                 if (section) {
                                     // Offset for sticky header/nav
-                                    const yOffset = -70; 
+                                    const yOffset = -70;
                                     const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                                    window.scrollTo({top: y, behavior: 'smooth'});
+                                    window.scrollTo({ top: y, behavior: 'smooth' });
                                 }
                             });
                             categoryNav.appendChild(navButton);
@@ -101,6 +101,25 @@ document.addEventListener('DOMContentLoaded', () => {
                                         listItem.appendChild(variantsList);
                                     }
                                 }
+
+                                if (item.toppings) {
+                                    const toppingsDiv = document.createElement('div');
+                                    toppingsDiv.classList.add('item-toppings');
+                                    toppingsDiv.textContent = item.toppings;
+                                    listItem.appendChild(toppingsDiv);
+                                }
+
+                                // Special case for Toppings category - use simple text
+                                if (category === 'Toppings') {
+                                    const itemName = listItem.querySelector('h3');
+                                    if (itemName) {
+                                        const p = document.createElement('p');
+                                        p.classList.add('topping-item-text');
+                                        p.textContent = itemName.textContent;
+                                        itemName.replaceWith(p);
+                                    }
+                                }
+
                                 itemList.appendChild(listItem);
                             });
                             categorySection.appendChild(itemList);
@@ -112,11 +131,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     window.addEventListener('scroll', () => {
                         const fromTop = window.scrollY + 100; // Adjust offset
                         const navButtons = document.querySelectorAll('.category-nav-button');
-                        
+
                         navButtons.forEach(link => {
                             const section = document.getElementById(link.textContent.replace(/\s+/g, '-').toLowerCase());
-                            if (section && 
-                                section.offsetTop <= fromTop && 
+                            if (section &&
+                                section.offsetTop <= fromTop &&
                                 section.offsetTop + section.offsetHeight > fromTop) {
                                 link.classList.add('active');
                                 // Scroll nav to keep active button in view

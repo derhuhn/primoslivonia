@@ -214,6 +214,30 @@ header .header-text-content p a {
     justify-content: space-between;
 }
 
+.item-toppings {
+    background-color: #000b5c;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    font-style: italic;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    /* Keep it from stretching if not needed, or use block if preferred */
+    width: fit-content;
+    max-width: 100%;
+}
+
+.topping-item-text {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #444;
+    font-style: italic;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     #menu-display {
