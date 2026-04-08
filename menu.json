@@ -1,13 +1,4 @@
 {
-  "Featured": [
-    {
-      "item": "Fish & Chips",
-      "subtitle": "(4 pieces)",
-      "description": "French Fries, Cole Slaw, Dinner Roll, Tartar Sauce",
-      "price": 15.8,
-      "image": "fish.png"
-    }
-  ],
   "Side Orders": [
     {
       "item": "Cole Slaw",
@@ -563,7 +554,7 @@
     {
       "item": "Fish Snack",
       "variants": {
-        "(2 pcs.)": 11.65
+        "(2 pcs.)": 12.65
       }
     },
     {
@@ -573,7 +564,7 @@
     },
     {
       "item": "Cod 10 Piece Basket",
-      "price": 32.2,
+      "price": 33.7,
       "specialLayout": true
     },
     {
@@ -585,7 +576,7 @@
     {
       "item": "Fish & Chips",
       "variants": {
-        "(4 pcs.)": 15.8
+        "(4 pcs.)": 16.8
       }
     }
   ],
