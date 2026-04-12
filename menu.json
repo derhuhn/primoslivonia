@@ -514,12 +514,12 @@
     },
     {
       "item": "Ribs & Fish",
-      "price": 18.30,
+      "price": 19.3,
       "specialLayout": true
     },
     {
       "item": "Chicken & Fish",
-      "price": 15.80,
+      "price": 16.8,
       "specialLayout": true
     },
     {
@@ -529,7 +529,7 @@
     },
     {
       "item": "Primo Smorg",
-      "price": 26.0,
+      "price": 27.0,
       "specialLayout": true
     }
   ],
