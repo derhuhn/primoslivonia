@@ -434,6 +434,42 @@ header .header-text-content p a {
     transform: translate(2px, 2px);
 }
 
+/* Pulse animation for order online button */
+@keyframes pulse-order {
+    0% {
+        transform: scale(1);
+        filter: brightness(.5);
+    }
+
+    50% {
+        transform: scale(1.1);
+        filter: brightness(1.8);
+    }
+
+    100% {
+        transform: scale(1);
+        filter: brightness(.5);
+    }
+}
+
+#order-online-btn {
+    position: relative;
+    animation: pulse-order 1s ease-in-out infinite;
+}
+
+#order-online-btn::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -35px;
+    width: 50px;
+    height: 50px;
+    background-image: url('new.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
 @media (min-width: 768px) {
     .button-74 {
         min-width: 120px;
