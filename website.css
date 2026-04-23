@@ -419,7 +419,7 @@ header .header-text-content p a {
     font-size: 18px;
     padding: 0 18px;
     line-height: 30px;
-    text-align: center;
+    text-align: right;
     text-decoration: none;
     user-select: none;
     -webkit-user-select: none;
@@ -454,16 +454,16 @@ header .header-text-content p a {
 
 #order-online-btn {
     position: relative;
-    animation: pulse-order 1s ease-in-out infinite;
+    animation: pulse-order 1.5s ease-in-out infinite;
 }
 
 #order-online-btn::after {
     content: "";
     position: absolute;
-    top: -8px;
+    top: -22px;
     left: -35px;
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     background-image: url('new.png');
     background-size: contain;
     background-repeat: no-repeat;
