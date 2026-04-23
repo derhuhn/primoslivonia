@@ -73,8 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (orderOnlineBtn) {
                         orderOnlineBtn.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            orderOnlineBtn.textContent = 'COMING SOON!';
                             createConfetti(e.clientX, e.clientY);
                         });
                     }
