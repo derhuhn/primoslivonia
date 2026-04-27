@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Feedback – Your Exclusive Discount Awaits</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: #000b5c;
+            padding: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .header img {
+            max-height: 80px;
+            width: auto;
+            flex-shrink: 0;
+        }
+
+        .header-text {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #ffffff;
+        }
+
+        .header .tagline {
+            margin: 5px 0 0;
+            font-size: 16px;
+            color: #ffffff;
+            text-align: center;
+            width: 100%;
+        }
+
+        .content {
+            padding: 30px 25px;
+        }
+
+        h2 {
+            color: #000b5c;
+        }
+
+        .discount-box {
+            background: #f4f4f4;
+            border: 2px dashed #000b5c;
+            padding: 20px;
+            text-align: center;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #fbeee0;
+            border: 2px solid #422800;
+            border-radius: 30px;
+            color: #422800;
+            padding: 14px 28px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        .footer {
+            background: #f8f5f0;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .loyalty {
+            font-style: italic;
+            color: #555;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header img {
+                max-height: 70px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Updated Header with Logo + Text -->
+        <div class="header">
+            <img src="https://www.primoslivonia.com/primos_logo.png" alt="Primos Pizza Logo"
+                style="max-height: 80px;" />
+
+            <div class="header-text">
+                <center>
+                    <h1>Primos Pizza</h1>
+                </center>
+            </div>
+
+            <div class="tagline">
+                <center>Livonia Family Tradition Since 1968</center>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Hi {{subscriber.first_name}},</h2>
+
+            <p>Thank you for taking our online ordering survey! We were truly touched by the responses — especially
+                seeing so many multi-generational Primos families. That kind of loyalty means everything to us.</p>
+
+            <p class="loyalty">You've been a valued Primos customer for <strong>{{custom_field.loyalty_years}}</strong>.
+                Because of that, we've created a special <strong>one-time discount code</strong> just for you.</p>
+
+            <!-- Discount Box -->
+            <div class="discount-box">
+                <h2 style="margin: 0 0 10px;">Your Exclusive Discount</h2>
+                <p style="font-size: 28px; font-weight: bold; margin: 10px 0; color: #000b5c;">
+                    {{custom_field.discount_code}}</p>
+                <p style="margin: 0;">Use this code on your next online order through Slice for <strong>$5 / $10 / $20
+                        off</strong> (based on your loyalty tier).</p>
+            </div>
+
+            <p><strong>Why order online with Slice at Primos?</strong></p>
+            <ul>
+                <li>Easy custom pizza builder with all your favorite toppings</li>
+                <li>Real-time order tracking for delivery or pickup</li>
+                <li>No extra fees — direct from Primos</li>
+                <li>Accurate orders every time (no more phone miscommunications)</li>
+            </ul>
+
+            <p style="text-align: center;">
+                <a href="https://order.slice.com/primospizza" class="btn" style="font-size: 18px;">Order Now &amp; Apply
+                    Your Code</a>
+            </p>
+
+            <p>Simply enter your code at checkout on Slice. It's one-time use and expires before the end of 2026 —
+                we hope
+                you'll make it your new go-to way to order from Primos.</p>
+
+            <p>Thank you again for being part of the Primos family,<br>
+                <img src="https://www.primoslivonia.com/dom_lina.png" alt="Dom and Lina"
+                    style="max-width: 100%; height: auto; max-height: 300px; border-radius: 8px; margin: 15px 0;"><br>
+                <strong>The Primos Pizza Team</strong><br>
+                Livonia, MI
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>You received this email because you completed our online ordering survey.</p>
+            <p><a href="{{unsubscribe_url}}" style="color: #666;">Unsubscribe</a> | Primos Pizza • Livonia, MI</p>
+            <p style="font-size: 11px;">33521 W. Seven Mile Rd.
+                Livonia, MI 48152</p>
+        </div>
+    </div>
+</body>
+
+</html>
