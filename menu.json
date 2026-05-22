@@ -103,12 +103,12 @@
   "Sandwiches": [
     {
       "item": "Fish Sandwich",
-      "price": 7.8,
+      "price": 8.8,
       "specialLayout": true
     },
     {
       "item": "Fish Sandwich Deluxe",
-      "price": 10.15,
+      "price": 11.15,
       "specialLayout": true
     },
     {
@@ -514,12 +514,12 @@
     },
     {
       "item": "Ribs & Fish",
-      "price": 19.3,
+      "price": 20.3,
       "specialLayout": true
     },
     {
       "item": "Chicken & Fish",
-      "price": 16.8,
+      "price": 17.8,
       "specialLayout": true
     },
     {
@@ -554,7 +554,7 @@
     {
       "item": "Fish Snack",
       "variants": {
-        "(2 pcs.)": 12.65
+        "(2 pcs.)": 13.65
       }
     },
     {
@@ -564,7 +564,7 @@
     },
     {
       "item": "Cod 10 Piece Basket",
-      "price": 33.7,
+      "price": 35.45,
       "specialLayout": true
     },
     {
@@ -576,7 +576,7 @@
     {
       "item": "Fish & Chips",
       "variants": {
-        "(4 pcs.)": 16.8
+        "(4 pcs.)": 17.8
       }
     }
   ],
